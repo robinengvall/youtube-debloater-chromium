@@ -10,3 +10,7 @@ a.yt-simple-endpoint[title="Shorts"] {
 a.yt-simple-endpoint[aria-label="Shorts"] {
   display: none !important;
 }
+
+ytm-shorts-lockup-view-model-v2 {
+  display: none !important;
+}

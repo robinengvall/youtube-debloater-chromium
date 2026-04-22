@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Debloat",
+  "version": "1.0",
+  "description": "Hide YouTube elements",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -3,11 +3,17 @@
   "name": "YouTube Debloat",
   "version": "1.0",
   "description": "Hide YouTube elements",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
       "js": ["content/content.js"],
-      "css": ["content/content.css"],
       "run_at": "document_idle"
     }
   ]

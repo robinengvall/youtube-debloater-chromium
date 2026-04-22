@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Debloat</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>YouTube Debloat</h1>
+  
+  <div class="settings">
+    <div class="option">
+      <input type="checkbox" id="hideShortsShelf" checked>
+      <label for="hideShortsShelf">Hide Shorts sections on home page</label>
+    </div>
+    
+    <div class="option">
+      <input type="checkbox" id="hideShortsCards" checked>
+      <label for="hideShortsCards">Hide Shorts cards in feed</label>
+    </div>
+    
+    <div class="option">
+      <input type="checkbox" id="hideShortsMenu" checked>
+      <label for="hideShortsMenu">Hide Shorts button in menu</label>
+    </div>
+    
+    <div class="option">
+      <input type="checkbox" id="hideShortsTabs" checked>
+      <label for="hideShortsTabs">Hide Shorts tab on channels</label>
+    </div>
+    
+    <div class="option">
+      <input type="checkbox" id="hideShortsSearch" checked>
+      <label for="hideShortsSearch">Hide Shorts in search results</label>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="status" id="status">Settings saved</div>
+    <button id="refresh">Reload YouTube</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

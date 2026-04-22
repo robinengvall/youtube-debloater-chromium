@@ -1,15 +1,29 @@
-ytd-rich-shelf-renderer {
+ytd-rich-shelf-renderer,
+ytd-reel-shelf-renderer {
   display: none !important;
 }
-a.yt-simple-endpoint[href^="/shorts/"] {
+
+ytm-shorts-lockup-view-model-v2,
+ytd-reel-item-renderer {
   display: none !important;
 }
-a.yt-simple-endpoint[title="Shorts"] {
+
+a[href^="/shorts/"] {
   display: none !important;
 }
-a.yt-simple-endpoint[aria-label="Shorts"] {
+
+ytd-video-renderer:has(a[href^="/shorts/"]),
+ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+ytd-compact-video-renderer:has(a[href^="/shorts/"]) {
   display: none !important;
 }
-ytm-shorts-lockup-view-model-v2 {
+
+yt-tab-shape[tab-title="Shorts"],
+tp-yt-paper-tab:has([aria-label*="Shorts"]) {
+  display: none !important;
+}
+
+ytd-guide-entry-renderer:has(a[href^="/shorts/"]),
+ytd-mini-guide-entry-renderer:has(a[href^="/shorts/"]) {
   display: none !important;
 }
